@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".WelcomeAct">
+
+
+    <TextView
+        android:id="@+id/appHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="146dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Let Me Craft !!"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/openColoring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="123dp"
+        android:background="@drawable/bg_home_intro"
+        android:fontFamily="sans-serif"
+        android:onClick="openColoring"
+        android:padding="15dp"
+        android:text="Coloring"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/openPainting"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appDescription" />
+
+    <Button
+        android:id="@+id/openPainting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="389dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/bg_home_intro"
+        android:fontFamily="sans-serif"
+        android:padding="15dp"
+        android:text="Painting"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/openAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/openAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/bg_home_intro"
+        android:fontFamily="sans-serif"
+        android:onClick="openAbout"
+        android:padding="15dp"
+        android:text="About Developer"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/Bye"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Bye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="160dp"
+        android:background="@drawable/bg_home_intro"
+        android:fontFamily="sans-serif"
+        android:padding="15dp"
+        android:text="Bye ?"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:onClick="exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openAbout" />
+
+    <TextView
+        android:id="@+id/appDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/amaranth"
+        android:padding="10dp"
+        android:text="Hey, Do you want to enjoy your childhood again? Then, you are at right place."
+        android:textAlignment="center"
+        android:textColor="#C6380B"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appHeading" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

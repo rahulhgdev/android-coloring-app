@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+
+
+    //coloring app
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574b</color>
+    <color name="colorAccent">#d81b60</color>
+    <color name="colorTransparentWhile">#cccccc</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_grey">#6A686A</color>
+    <color name="blue">#1e90ff</color>
+
+    //palette
+
+    <color name="red_light">#ff605c</color>
+    <color name="orange_light">#ffbd44</color>
+    <color name="green_light">#00ca4e</color>
+    <color name="dark_grey">#7A777A</color>
+    <color name="item_toolbar">#171616</color>
+    <color name="red">#ff0000</color>
+
+    //extra color
+    <color name="violet">#9C27B0</color>
+    <color name="purple">#673AB7</color>
+    <color name="pink">#CF0BE4</color>
+    <color name="skyblue">#00FFFF</color>
+    <color name="chocalaty">#4B4850</color>
+    <color name="green">#4CAF50</color>
+
+
+    //array
+
+    <array name="demo_colors">
+        <item>@color/colorAccent</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/item_toolbar</item>
+        <item>@color/blue</item>
+        <item>@color/dark_grey</item>
+        <item>@color/orange_light</item>
+        <item>@color/red</item>
+
+        <item>@color/violet</item>
+        <item>@color/purple</item>
+        <item>@color/pink</item>
+        <item>@color/chocalaty</item>
+
+    </array>
+
+
+
+
+</resources>

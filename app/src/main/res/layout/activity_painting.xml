@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaintingActivity">
+
+
+<!--           For Painting Area-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/paintingArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/constraintLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="0dp">
+
+        <include
+            layout="@layout/view_display"
+            android:layout_width="410dp"
+            android:layout_height="644dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-8dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--    For Color and pencil, eraser area-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:background="@drawable/painting_tools_design"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/btnPencil"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pencil"
+            android:onClick="pencil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnEraser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/eraser"
+            android:onClick="eraser"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnRed" />
+
+        <Button
+            android:id="@+id/btnRed"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/painting_btn_design"
+            android:backgroundTint="#FF0000"
+            android:onClick="redColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnGreen" />
+
+        <Button
+            android:id="@+id/btnGreen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/painting_btn_design"
+            android:backgroundTint="#10EC19"
+            android:onClick="greenColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnBlue" />
+
+        <Button
+            android:id="@+id/btnBlue"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/painting_btn_design"
+            android:backgroundTint="#3F51B5"
+            android:onClick="blueColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnGreen" />
+
+        <Button
+            android:id="@+id/btnViolet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/painting_btn_design"
+            android:backgroundTint="#AC00CA"
+            android:onClick="magentaColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnCyan"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/btnBlue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnCyan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/painting_btn_design"
+            android:backgroundTint="#00FFD9"
+            android:onClick="cyanColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@drawable/painting_tools_toolbar_design"
+        android:backgroundTint="#7927ED"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionModeStyle" />
+
+
+</RelativeLayout>

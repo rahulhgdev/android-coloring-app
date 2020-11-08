@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".PaintActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/white"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:id="@+id/appbar2" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.rahulhgdev.letmecraft.widget.PaintView
+        android:id="@+id/paintView"
+        android:layout_width="match_parent"
+        android:layout_height="497dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/light_grey"
+        android:gravity="center"/>
+
+    <com.thebluealliance.spectrum.SpectrumPalette
+        android:id="@+id/palette"
+        android:layout_width="wrap_content"
+        android:background="#fdebd0"
+        android:layout_height="101dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        app:spectrum_autoPadding="true"
+        app:spectrum_colors="@array/demo_colors"
+        app:spectrum_outlineWidth="2dp" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="196dp"
+            android:layout_height="29dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/multi_color"
+            android:onClick="selectColor" />
+
+        <ImageButton
+            android:layout_width="185dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:onClick="undoLastAction"
+            android:src="@drawable/undo" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
