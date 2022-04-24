@@ -12,3 +12,5 @@
 ![IMG_20201108_191653_440 1](https://user-images.githubusercontent.com/67586773/98467444-54507900-21fb-11eb-9c3c-5ced3cd2a1fe.jpg)
 
 ![IMG_20201108_191559_512 1](https://user-images.githubusercontent.com/67586773/98467449-5dd9e100-21fb-11eb-817b-efc8220878d7.jpg)
+
+Uploading apk soon..!
