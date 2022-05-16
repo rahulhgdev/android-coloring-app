@@ -1,5 +1,6 @@
 # Let-Me-Craft!
 ## Let Me Craft is an android application which is based on theme of Hack and Craft.
+## User can draw as well as fill color in different beautiful pictures.
 
 # Screenshots📸📸
 
